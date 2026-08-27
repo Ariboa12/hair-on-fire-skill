@@ -121,8 +121,9 @@ Name the status quo first — the incumbent product, the manual process, or
 
 Grade: **PROVEN** (measured delta, third-party or customer-verified),
 **PLAUSIBLE** (mechanism clearly explains why 10x should hold, not yet
-measured), **UNPROVEN** (asserted only), **ABSENT** (delta is incremental
-even if claims are loud).
+measured), **UNPROVEN** (asserted only), **ABSENT** (delta is incremental,
+or lands on a dimension the buyer does not rank — a measured 10x on the wrong
+axis is still absent where it counts).
 
 ### Reading the two grades together
 
