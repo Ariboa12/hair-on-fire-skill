@@ -1,0 +1,41 @@
+{
+  "skill_name": "hair-on-fire",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "hair on fire check on this one: Ferrocast makes drop-in software for municipal water utilities that predicts lead-pipe corrosion events 2-3 weeks out. EPA's revised Lead and Copper Rule gives utilities until Oct 2027 to complete service-line inventories and remediation plans; noncompliance fines run $25k/day. Utilities currently do this with manual sampling that costs ~$300 per site visit and catches problems after exceedance. Ferrocast's model runs on existing SCADA data (no new hardware), flagged 9 of 10 exceedance events in a 14-month backtest with Trenton Water Works, and costs $40k/yr vs the ~$700k/yr Trenton spent on reactive sampling and emergency flushing. Trenton and two Ohio utilities are now paying customers.",
+      "expected_output": "Uses the exact verdict template. Problem heat SCORCHING (or HOT) on the strength of the dated EPA deadline, daily fines, and existing reactive spend. 10x delta PROVEN or PLAUSIBLE citing the 17x cost ratio and the 9-of-10 backtest with a named paying customer. Evidence traces to input facts; gaps ask founder-directed questions (e.g., who verified the backtest, contract sizes). Verdict affirms buyers would adopt an imperfect version now.",
+      "files": [],
+      "assertions": [
+        "Used the exact verdict template: 🔥 header, Problem heat and 10x delta grade lines, Evidence section, Gaps section, Verdict paragraph",
+        "Graded problem heat SCORCHING or HOT, citing the dated EPA deadline and/or the $25k/day fines and existing sampling spend as the reason",
+        "Graded the 10x delta PROVEN or PLAUSIBLE and cited at least one quantified input fact (9-of-10 backtest, $40k vs $700k, or no-new-hardware install)",
+        "Every Evidence item traces to a fact in the input (no invented customers, numbers, or coverage), and at least one Gap is phrased as a question to ask the founder"
+      ]
+    },
+    {
+      "id": 1,
+      "prompt": "evaluate this startup: Willow is a beautifully designed journaling app that uses AI to turn your daily voice notes into an illustrated storybook of your life. Users love it — 4.8 stars across 2,100 App Store reviews, 60k downloads since January, 11% of users journal at least three times a week. Subscription is $6/mo. The team believes memory preservation is a deeply underserved human need and that Willow is 10x more delightful than a blank notes app.",
+      "expected_output": "Uses the exact template. Problem heat WARM or COLD — real users and good reviews but no burning problem, no budget line, nothing breaks if it vanishes; ideally names the vitamin-vs-painkiller pattern. 10x delta ABSENT or UNPROVEN — 'more delightful' is not a measured delta on a ranked dimension and the status quo (free notes app) costs nothing to keep. Does not let the strong engagement metrics inflate the problem-heat grade.",
+      "files": [],
+      "assertions": [
+        "Used the exact verdict template: 🔥 header, Problem heat and 10x delta grade lines, Evidence section, Gaps section, Verdict paragraph",
+        "Graded problem heat WARM or COLD, on the reasoning that no buyer's hair is burning (no spend on a worse alternative, no cost to abandoning it) despite genuine engagement",
+        "Graded the 10x delta ABSENT or UNPROVEN, noting 'more delightful' is an asserted, unmeasured delta against a free status quo",
+        "Did not conflate traction with urgency — the 4.8 stars / 60k downloads appear as engagement evidence without raising the problem-heat grade, and the vitamin/nice-to-have pattern is identified in substance"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "got sent this blurb, worth a meeting? — 'Nexaform is the AI-native operating system for the $40B industrial maintenance market. Legacy CMMS platforms are fundamentally broken, and maintenance teams are drowning. Our proprietary agentic AI delivers 10x productivity gains out of the box, eliminating downtime and transforming reliability culture. We are already in conversations with several Fortune 500 manufacturers and are raising a $6M seed to meet explosive demand.'",
+      "expected_output": "Uses the exact template. Recognizes the input as claims-only: fluent urgency language with zero evidence — no named customer, no measured delta, no price, no deadline. 10x delta UNPROVEN (asserted only); problem heat graded honestly as unverifiable from this input (WARM, or HOT-at-best flagged as claimed) rather than swallowing 'drowning' and 'broken'. Gaps section carries the weight with sharp founder questions. Does not invent a low score to look rigorous, and does not treat 'in conversations with Fortune 500' as traction.",
+      "files": [],
+      "assertions": [
+        "Used the exact verdict template: 🔥 header, Problem heat and 10x delta grade lines, Evidence section, Gaps section, Verdict paragraph",
+        "Graded the 10x delta UNPROVEN on the grounds that the 10x figure is asserted with no measurement, mechanism, or named customer",
+        "Explicitly distinguished claims from evidence — noted the input contains marketing language but no verifiable evidence (an empty or claims-only Evidence section, or evidence items explicitly tagged as unverified claims)",
+        "Gaps contain at least three founder-directed questions (e.g., named customers, measured baseline, what 10x is measured against), and 'in conversations with' is not counted as traction"
+      ]
+    }
+  ]
+}
