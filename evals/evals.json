@@ -4,37 +4,113 @@
     {
       "id": 0,
       "prompt": "hair on fire check on this one: Ferrocast makes drop-in software for municipal water utilities that predicts lead-pipe corrosion events 2-3 weeks out. EPA's revised Lead and Copper Rule gives utilities until Oct 2027 to complete service-line inventories and remediation plans; noncompliance fines run $25k/day. Utilities currently do this with manual sampling that costs ~$300 per site visit and catches problems after exceedance. Ferrocast's model runs on existing SCADA data (no new hardware), flagged 9 of 10 exceedance events in a 14-month backtest with Trenton Water Works, and costs $40k/yr vs the ~$700k/yr Trenton spent on reactive sampling and emergency flushing. Trenton and two Ohio utilities are now paying customers.",
-      "expected_output": "Uses the exact verdict template. Problem heat SCORCHING (or HOT) on the strength of the dated EPA deadline, daily fines, and existing reactive spend. 10x delta PROVEN or PLAUSIBLE citing the 17x cost ratio and the 9-of-10 backtest with a named paying customer. Evidence traces to input facts; gaps ask founder-directed questions (e.g., who verified the backtest, contract sizes). Verdict affirms buyers would adopt an imperfect version now.",
+      "expected_output": "Uses the exact template. Problem heat SCORCHING: a dated regulatory deadline, $25k/day fines, existing reactive spend, and three utilities already paying is the definition of a buyer shopping with budget and a deadline. 10x delta PROVEN or PLAUSIBLE on the 17x cost ratio and the 9-of-10 backtest. Attempts to verify the EPA rule and its date. Evidence items are tagged and trace to the input; gaps are founder-directed questions. Next: MEET or DILIGENCE.",
       "files": [],
       "assertions": [
-        "Used the exact verdict template: 🔥 header, Problem heat and 10x delta grade lines, Evidence section, Gaps section, Verdict paragraph",
-        "Graded problem heat SCORCHING or HOT, citing the dated EPA deadline and/or the $25k/day fines and existing sampling spend as the reason",
-        "Graded the 10x delta PROVEN or PLAUSIBLE and cited at least one quantified input fact (9-of-10 backtest, $40k vs $700k, or no-new-hardware install)",
-        "Every Evidence item traces to a fact in the input (no invented customers, numbers, or coverage), and at least one Gap is phrased as a question to ask the founder"
+        "Used the exact verdict template: 🔥 header, Problem heat and 10x delta grade lines, Evidence section, Gaps section, Verdict paragraph, and a Next: line",
+        "Graded problem heat SCORCHING (not HOT or lower), citing the combination of the dated EPA deadline, the $25k/day fines, and three utilities already paying",
+        "Graded the 10x delta PROVEN or PLAUSIBLE and cited at least one quantified input fact (9-of-10 backtest, $40k vs ~$700k, or no-new-hardware install)",
+        "Attempted to verify the EPA Lead and Copper Rule deadline externally, and either reported what it found (including any discrepancy with the stated Oct 2027 date) or stated plainly that it could not check — it did not silently treat the deadline as confirmed",
+        "Every Evidence item is tagged (verified), (input), or (claim), and none invents customers, numbers, or coverage absent from the input",
+        "Ends with a Next: line reading MEET or DILIGENCE, with a reason that is not merely a restatement of the two grades"
       ]
     },
     {
       "id": 1,
       "prompt": "evaluate this startup: Willow is a beautifully designed journaling app that uses AI to turn your daily voice notes into an illustrated storybook of your life. Users love it — 4.8 stars across 2,100 App Store reviews, 60k downloads since January, 11% of users journal at least three times a week. Subscription is $6/mo. The team believes memory preservation is a deeply underserved human need and that Willow is 10x more delightful than a blank notes app.",
-      "expected_output": "Uses the exact template. Problem heat WARM or COLD — real users and good reviews but no burning problem, no budget line, nothing breaks if it vanishes; ideally names the vitamin-vs-painkiller pattern. 10x delta ABSENT or UNPROVEN — 'more delightful' is not a measured delta on a ranked dimension and the status quo (free notes app) costs nothing to keep. Does not let the strong engagement metrics inflate the problem-heat grade.",
+      "expected_output": "Uses the exact template. Problem heat COLD — the vitamin dressed as a painkiller. Critically, it must handle the counter-evidence: paying subscribers look like existing spend, but discretionary consumer spend on a pleasant product is not a budget line under a burning problem, and nothing breaks if Willow vanishes. 10x delta ABSENT — 'more delightful' is an asserted, unmeasured delta against a free status quo. Engagement metrics appear as evidence of engagement without raising problem heat. Next: PASS.",
       "files": [],
       "assertions": [
-        "Used the exact verdict template: 🔥 header, Problem heat and 10x delta grade lines, Evidence section, Gaps section, Verdict paragraph",
-        "Graded problem heat WARM or COLD, on the reasoning that no buyer's hair is burning (no spend on a worse alternative, no cost to abandoning it) despite genuine engagement",
-        "Graded the 10x delta ABSENT or UNPROVEN, noting 'more delightful' is an asserted, unmeasured delta against a free status quo",
-        "Did not conflate traction with urgency — the 4.8 stars / 60k downloads appear as engagement evidence without raising the problem-heat grade, and the vitamin/nice-to-have pattern is identified in substance"
+        "Used the exact verdict template: 🔥 header, Problem heat and 10x delta grade lines, Evidence section, Gaps section, Verdict paragraph, and a Next: line",
+        "Graded problem heat COLD, and explicitly addressed the strongest counter-argument — that 2,100 reviews and a $6/mo subscription look like existing spend — by distinguishing discretionary consumer spend from a budget line attached to a burning problem",
+        "Graded the 10x delta ABSENT, noting 'more delightful' is asserted and unmeasured against a free status quo",
+        "Did not conflate traction with urgency: the 4.8 stars / 60k downloads / 11% weekly figures appear as engagement evidence without raising the problem-heat grade",
+        "Identified the vitamin-dressed-as-painkiller pattern in substance",
+        "Ends with a Next: line reading PASS, with the one clause explaining why"
       ]
     },
     {
       "id": 2,
       "prompt": "got sent this blurb, worth a meeting? — 'Nexaform is the AI-native operating system for the $40B industrial maintenance market. Legacy CMMS platforms are fundamentally broken, and maintenance teams are drowning. Our proprietary agentic AI delivers 10x productivity gains out of the box, eliminating downtime and transforming reliability culture. We are already in conversations with several Fortune 500 manufacturers and are raising a $6M seed to meet explosive demand.'",
-      "expected_output": "Uses the exact template. Recognizes the input as claims-only: fluent urgency language with zero evidence — no named customer, no measured delta, no price, no deadline. 10x delta UNPROVEN (asserted only); problem heat graded honestly as unverifiable from this input (WARM, or HOT-at-best flagged as claimed) rather than swallowing 'drowning' and 'broken'. Gaps section carries the weight with sharp founder questions. Does not invent a low score to look rigorous, and does not treat 'in conversations with Fortune 500' as traction.",
+      "expected_output": "Uses the exact template. Recognizes the input as claims-only: fluent urgency with no named customer, no measured delta, no price, no deadline. Evidence section is either 'none — the input is claims only' or contains only (claim)-tagged items. 10x delta UNPROVEN. Problem heat graded honestly as unverifiable from this input rather than swallowing 'drowning' and 'broken'. Gaps carry the weight. Next: PASS.",
       "files": [],
       "assertions": [
-        "Used the exact verdict template: 🔥 header, Problem heat and 10x delta grade lines, Evidence section, Gaps section, Verdict paragraph",
+        "Used the exact verdict template: 🔥 header, Problem heat and 10x delta grade lines, Evidence section, Gaps section, Verdict paragraph, and a Next: line",
+        "Evidence section is either the literal 'none — the input is claims only' or contains only items tagged (claim); no item is tagged (verified), and no marketing phrase is promoted to (input)",
         "Graded the 10x delta UNPROVEN on the grounds that the 10x figure is asserted with no measurement, mechanism, or named customer",
-        "Explicitly distinguished claims from evidence — noted the input contains marketing language but no verifiable evidence (an empty or claims-only Evidence section, or evidence items explicitly tagged as unverified claims)",
-        "Gaps contain at least three founder-directed questions (e.g., named customers, measured baseline, what 10x is measured against), and 'in conversations with' is not counted as traction"
+        "Did not let any (claim) line raise a grade — the problem-heat grade rests on the absence of evidence, not on the words 'drowning' or 'fundamentally broken'",
+        "Gaps contain at least three founder-directed questions (e.g. named customers, measured baseline, what the 10x is measured against), and 'in conversations with' Fortune 500 is not counted as traction",
+        "Ends with a Next: line reading PASS or WATCH — not MEET on the strength of the claims alone"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "worth a look? Cadence Labs generates clinical-trial site-monitoring reports. CROs currently take about 6 weeks to turn a report around; Cadence delivers in 4 hours — measured across 12 completed studies, and two of the CRO's own biostatisticians signed off that the outputs match theirs. Price is the same as the incumbent. The clinical ops leads we spoke to said the reports are much nicer to read.",
+      "expected_output": "The trap: a genuine, measured, enormous delta (roughly 250x) on a dimension the buyer does not rank first. Trial timelines are gated by enrollment and regulatory review, not monitoring-report turnaround, and the price is identical, so no budget moves. Problem heat WARM or COLD. 10x delta ABSENT — measured but on the wrong axis, which is still absent where it counts. The check must name the dimension mismatch explicitly rather than being impressed by the multiple.",
+      "files": [],
+      "assertions": [
+        "Used the exact verdict template: 🔥 header, Problem heat and 10x delta grade lines, Evidence section, Gaps section, Verdict paragraph, and a Next: line",
+        "Explicitly named the dimension mismatch: the measured gain is on report turnaround speed, which is not the dimension the buyer ranks first (regulatory defensibility / audit-readiness, or the enrollment-gated trial timeline)",
+        "Graded the 10x delta ABSENT despite the delta being large and third-party corroborated — it did not award PROVEN merely because the improvement was measured",
+        "Graded problem heat WARM or COLD, noting that identical pricing means no budget moves and no deadline forces a switch",
+        "Treated 'much nicer to read' as a (claim), not as evidence of buyer preference",
+        "Ends with a Next: line reading PASS or WATCH"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "hair on fire check: Verdance is a browser extension that turns corporate travel receipts into a single audit-ready PDF. A Big Four audit team independently benchmarked it across 4,000 receipts and measured 94% fewer manual corrections than the incumbent OCR. Today employees file expenses in about 9 minutes a month using the tooling already bundled free with Concur. Verdance is $4/employee/month.",
+      "expected_output": "Solution in search of a problem. The delta is real, large, and third-party verified — PROVEN. But nobody's hair is burning: 9 minutes a month, a free bundled status quo, no deadline, no budget line, and the cost of doing nothing is trivial. Problem heat COLD. The point of this case is axis independence — a verified delta must not drag the heat grade upward. Next: PASS or WATCH.",
+      "files": [],
+      "assertions": [
+        "Used the exact verdict template: 🔥 header, Problem heat and 10x delta grade lines, Evidence section, Gaps section, Verdict paragraph, and a Next: line",
+        "Graded the 10x delta PROVEN, crediting the independent Big Four benchmark across 4,000 receipts",
+        "Graded problem heat COLD despite the PROVEN delta — the two axes were scored independently and the verified delta did not inflate the heat grade",
+        "Named the status quo as the free bundled Concur tooling and the cost of the status quo as roughly 9 minutes per employee per month, i.e. trivial",
+        "Identified the solution-in-search-of-a-problem pattern in substance",
+        "Ends with a Next: line reading PASS or WATCH"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "should I take this meeting? Thornbury sells shift-scheduling software to hospital nurse managers. Nurse managers currently build unit schedules by hand in Excel — 6 to 9 hours per unit per month — and 40% of units report at least one uncovered shift a week. Thornbury cuts scheduling to under an hour and eliminated uncovered shifts at both pilot units. The nurse managers love it. Purchasing at both pilot hospitals sits with the VP of Clinical Operations, who hasn't been introduced yet. $18k/yr per hospital.",
+      "expected_output": "The buyer-is-not-the-user trap. The person whose hair is genuinely burning (the nurse manager: 6-9 hours a month, weekly uncovered shifts) is not the person who signs (the VP of Clinical Operations, whose pain is entirely unestablished). A strong check separates the two and either discounts the heat grade or makes the unestablished budget-holder the first gap. A weak check grades HOT on the nurse manager's pain and never notices nobody has talked to the buyer.",
+      "files": [],
+      "assertions": [
+        "Explicitly distinguished the person who feels the pain (the nurse manager) from the person who controls the budget (the VP of Clinical Operations)",
+        "Treated the unestablished budget-holder as a material limit on the problem-heat grade, or made it the first Gap — rather than grading heat on the nurse manager's pain alone",
+        "Used the exact verdict template: 🔥 header, Problem heat and 10x delta grade lines, Evidence section, Gaps section, Verdict paragraph, and a Next: line",
+        "Graded the 10x delta PLAUSIBLE or PROVEN on the 6-9 hours to under an hour reduction and the eliminated uncovered shifts at two pilots",
+        "Ends with a Next: line, and if it reads MEET the stated reason turns on resolving whether the VP of Clinical Operations feels the problem"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "thoughts on this one? Landing page attached.",
+      "expected_output": "Reads the attached landing page rather than asking for more input, and states what it evaluated. The page is mostly marketing froth ('drowning', '$60B industry', '10x faster', 'transforming reliability culture') with three falsifiable particulars buried in it: Wexler Plastics of Akron OH as a named customer since March 2025, scrap rate falling 4.1% to 1.3% over six months across four presses, and a $2,400/line/month price. The check must sort the two kinds apart via the tags.",
+      "files": [
+        "evals/files/aperture-landing.html"
+      ],
+      "assertions": [
+        "Read the attached landing page file without asking the user to paste its contents, and stated what it evaluated",
+        "Used the exact verdict template: 🔥 header, Problem heat and 10x delta grade lines, Evidence section, Gaps section, Verdict paragraph, and a Next: line",
+        "Extracted the falsifiable particulars from the page — the named customer Wexler Plastics, the 4.1% to 1.3% scrap-rate change, and the $2,400/line/month price — and tagged them (input) or (verified) rather than (claim)",
+        "Tagged the marketing copy ('10x faster than legacy vision systems', '$60B industry', 'drowning in preventable scrap') as (claim), and did not let any of it raise a grade",
+        "Named the status quo as legacy machine-vision systems and/or manual inspection, and measured the delta against that rather than against zero"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Re-test our Ferrocast thesis. Our Mar 2026 check graded it SCORCHING / PLAUSIBLE, on the Oct 2027 EPA deadline and the Trenton backtest. Since then: EPA pushed the compliance date to 2029; Trenton and the two Ohio utilities all renewed and two more utilities signed, all at $40k/yr; and a competitor, HydroSense, raised $30M and shipped a similar model bundled free into a major SCADA vendor's platform.",
+      "expected_output": "A re-test, not a fresh check. Heat falls (the forcing deadline moved two years out); the delta's measurement strengthens (five paying customers renewing at $40k/yr) but its durability is now under direct attack (a free bundled competitor). Uses the re-test additions: direction arrows on each grade, a Prior: line with the Mar 2026 grades, and a Tripwire:. Uses the re-test Next: ladder, not the new-deal ladder. Separates thesis from execution — execution is fine; it is the thesis's deadline leg that broke.",
+      "files": [],
+      "assertions": [
+        "Included a Prior: line giving the Mar 2026 grades (SCORCHING / PLAUSIBLE) and their date",
+        "Marked each grade with a direction against the prior read (arrow or explicit rose/held/fell), showing problem heat falling on the deadline slip",
+        "Ends with a Next: line drawn from the re-test ladder (HOLD, ENGAGE, RESERVE, or RE-UNDERWRITE) and NOT from the new-deal ladder (PASS, WATCH, MEET, DILIGENCE)",
+        "Included a Tripwire: line naming a specific observable fact that would force the next downgrade",
+        "Separated thesis from execution explicitly — recognised that the company is executing (five paying customers, all renewals) while the thesis's deadline leg broke, rather than reading the renewals as the thesis holding",
+        "Treated the free bundled HydroSense competitor as a durability threat to the 10x delta, not merely as competitive noise"
       ]
     }
   ]
