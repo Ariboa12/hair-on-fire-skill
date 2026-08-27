@@ -37,7 +37,7 @@ page by page. If the input is thin (a one-liner), run the evaluation anyway
 should ask for more before starting. State what you evaluated.
 
 If the company is already in the portfolio, read the final section first — a
-re-test changes Step 2 and adds two lines to the template.
+re-test changes Step 2, the `Next:` ladder, and the template.
 
 Keep claims and facts separate from the start. The company's own copy —
 adjectives, market sizes, "10x" — is a *claim*. Specific falsifiable
@@ -181,12 +181,30 @@ Evidence:
 Gaps:
 - [each phrased as the question to ask the founder]
 
-Verdict: [2–4 sentences: would a buyer grab an imperfect version today; is
-the advantage big enough and durable enough to survive switching costs; what
-single piece of evidence would most change this read]
+Verdict: [2–3 sentences: would a buyer grab an imperfect version today; is
+the advantage big enough and durable enough to survive switching costs]
+Next: [PASS|WATCH|MEET|DILIGENCE] — [the action in a clause, plus the one
+fact that would change it]
 ```
 
-A re-test adds two lines to this template — see the final section.
+Close with the action. `Next:` takes one of four:
+
+- **PASS** — not worth a meeting. Give the one clause that says why, so the
+  reader can send it back to whoever forwarded it.
+- **WATCH** — not now; name the fact that would change that.
+- **MEET** — the remaining uncertainty is the kind only a founder resolves.
+- **DILIGENCE** — worth real time and money. Rare, and it should read as
+  rare.
+
+The recommendation is not a lookup from the grades — if it were, the grades
+would be enough. It is the grades plus **the cost of the next step**. A
+WARM/UNPROVEN read still earns MEET when one call would settle it; a
+HOT/PLAUSIBLE read earns WATCH when only a year of operating data would. The
+two can point opposite ways on purpose: SCORCHING/ABSENT is usually PASS on
+this company and WATCH on the space — say both.
+
+A re-test changes this template and uses a different `Next:` ladder — see
+the final section.
 
 Keep the whole check under a page. Calibration: most real companies land
 WARM–HOT and PLAUSIBLE–UNPROVEN; reserve SCORCHING and PROVEN for cases with
@@ -227,9 +245,11 @@ Gaps:
 
 Verdict: A safety manager already writing $480k checks will trial an
 imperfect retrofit — the spend proves the fire. The delta is large but
-self-reported; insurer-verified incident data or a signed conversion of
-either pilot would move the delta to PROVEN and make it fundable on evidence
-rather than story.
+self-reported, and the slot-in install means it does not have to be 10x to
+survive the switch.
+
+Next: MEET — one call establishes whether either pilot converted and who
+measured the 87%. A signed conversion moves the delta to PROVEN.
 ```
 
 ## Re-testing a company you already own
@@ -269,6 +289,13 @@ and their date, and close with a `Tripwire:` line naming the observable fact
 that would force the next downgrade. A thesis with no tripwire has not been
 re-tested, only re-affirmed.
 
+`Next:` uses a different ladder here, because the decision is not whether to
+meet: **HOLD** (thesis intact), **ENGAGE** (thesis intact, execution is the
+problem — the management conversation), **RESERVE** (thesis stronger than at
+entry; consider follow-on), **RE-UNDERWRITE** (the thesis has moved enough
+that the position needs a fresh decision). It carries no trigger clause —
+`Tripwire:` is the trigger.
+
 ```
 🔥 Hair-on-Fire Check: Ferrocast (re-test)
 
@@ -281,6 +308,7 @@ Prior:        SCORCHING / PLAUSIBLE (Mar 2026 check)
 [Evidence and Gaps as usual]
 
 Verdict: ...
+Next: HOLD
 Tripwire: a second slip, or any of the three utilities declining to renew.
 ```
 
