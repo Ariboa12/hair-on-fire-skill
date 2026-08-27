@@ -9,7 +9,9 @@ description: >
   10x test", "evaluate this startup", "should I take this meeting", or just a
   pasted company blurb with "thoughts?". Also use it for portfolio companies
   when the user wants to re-test the thesis against new evidence. Do not use
-  it for triaging the user's own task list — that is the task-triage skill.
+  it for triaging the user's own task list (that is task-triage) or for
+  working through a portfolio review checklist (that is
+  portfolio-workthrough) — this skill tests one company's thesis.
 ---
 
 # Hair on Fire
@@ -33,6 +35,9 @@ page URL, or a deck (PDF). Read whatever is given; fetch URLs; read decks
 page by page. If the input is thin (a one-liner), run the evaluation anyway
 — a thin input means the Gaps section does more of the work, not that you
 should ask for more before starting. State what you evaluated.
+
+If the company is already in the portfolio, read the final section first — a
+re-test changes Step 2 and adds two lines to the template.
 
 Keep claims and facts separate from the start. The company's own copy —
 adjectives, market sizes, "10x" — is a *claim*. Specific falsifiable
@@ -181,6 +186,8 @@ the advantage big enough and durable enough to survive switching costs; what
 single piece of evidence would most change this read]
 ```
 
+A re-test adds two lines to this template — see the final section.
+
 Keep the whole check under a page. Calibration: most real companies land
 WARM–HOT and PLAUSIBLE–UNPROVEN; reserve SCORCHING and PROVEN for cases with
 dated deadlines and measured deltas, and reserve COLD/ABSENT for cases where
@@ -224,3 +231,59 @@ self-reported; insurer-verified incident data or a signed conversion of
 either pilot would move the delta to PROVEN and make it fundable on evidence
 rather than story.
 ```
+
+## Re-testing a company you already own
+
+A re-test is not a fresh check with the answer already known, and it is not a
+performance review — that is the portfolio-workthrough skill. It asks one
+question: **does the original thesis still hold, and what moved it?**
+
+**Anchor on the prior read.** Ask for it if it is not supplied — the earlier
+check, the investment memo, or one sentence on why you invested. If nothing
+is available, reconstruct the thesis and label it *reconstructed*; a re-test
+against an imagined original is worthless.
+
+**The direction is the finding, not the level.** "Still HOT" says nothing.
+"Was SCORCHING on the Oct 2027 EPA deadline; enforcement slipped to 2029
+(verified); now HOT" says everything. For each axis name whether it rose,
+held, or fell, and the single fact that moved it.
+
+**Separate thesis from execution.** A company can be missing plan while the
+thesis is more true than ever, and can be growing while the fire it was built
+for goes out. Only the second is a thesis failure, and the remedies are
+opposite: one is a management conversation, the other is hold-or-fold.
+
+Step 2 is cheaper and worth more here, because facts that were unknowable at
+investment are now checkable: did the deadline hold, did the named customers
+renew, did an incumbent ship the feature, is the incumbent's price still the
+denominator you assumed?
+
+The bias runs opposite to new deal flow. On a new deal you risk being sold;
+on one you own, you risk defending a decision you championed. If you catch
+yourself explaining why a downgrade does not really count, that is the
+finding.
+
+Same template, three additions: mark each grade `↑` `→` `↓` against the
+prior read, add a `Prior:` line under the grades giving the earlier grades
+and their date, and close with a `Tripwire:` line naming the observable fact
+that would force the next downgrade. A thesis with no tripwire has not been
+re-tested, only re-affirmed.
+
+```
+🔥 Hair-on-Fire Check: Ferrocast (re-test)
+
+Problem heat: HOT ↓ — the Oct 2027 deadline slipped to 2029; the $25k/day
+              fines that drove the urgency are two budget cycles out
+10x delta:    PROVEN ↑ — three utilities renewed at $40k/yr against the
+              ~$700k/yr they spent reactively (verified — board minutes)
+Prior:        SCORCHING / PLAUSIBLE (Mar 2026 check)
+
+[Evidence and Gaps as usual]
+
+Verdict: ...
+Tripwire: a second slip, or any of the three utilities declining to renew.
+```
+
+Note what that example does: heat fell and the delta rose. The two axes move
+independently, and a re-test that moves them in lockstep is usually a re-test
+that only looked at how the company is doing.
