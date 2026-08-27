@@ -89,8 +89,15 @@ descending order of weight:
 - **Cost of the status quo** — downtime, lost revenue, injury risk, churn.
   Quantified beats asserted.
 - **Who personally feels it** — a named role whose week is ruined beats
-  "companies struggle with". If you cannot name the buyer whose hair burns,
+  "companies struggle with". If you cannot name a person whose hair burns,
   the heat is decorative.
+- **Whether that person can sign** — the one who feels the pain and the one
+  who controls the budget are often different people, and the grade belongs
+  to the second. Can the sufferer buy it themselves — self-serve,
+  expensable, no integration? Then their pain is the heat. If not, their
+  pain is only a lead, the budget-holder's pain is the heat, and an
+  unestablished budget-holder is the first Gap. Beloved by users who cannot
+  purchase is the most common way a real fire fails to convert.
 - **Workaround ugliness** — spreadsheets, duct tape, overtime. People only
   build ugly workarounds for problems they cannot ignore.
 
@@ -258,6 +265,8 @@ Evidence:
   not collision-avoidance hardware (verified — OSHA standard text)
 
 Gaps:
+- Does the safety manager control this budget, or does a per-forklift
+  retrofit go to plant capex?
 - Are the two pilots paying customers now, and at what price?
 - Who verified the 87% — the 3PLs' incident logs or Acme's own sensors?
 - Do insurers discount premiums for these retrofits? That would create a
