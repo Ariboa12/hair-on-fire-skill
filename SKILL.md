@@ -16,17 +16,16 @@ description: >
 
 # Hair on Fire
 
-The test comes from the oldest filter in venture: is someone's hair on fire?
-A person whose hair is burning will grab any bucket — muddy water, warm
-water, a jacket — because the cost of waiting exceeds the imperfection of
-the solution. A startup passing this test sells an imperfect v1 today. A
-startup failing it must first convince people the fire exists, and that is a
-marketing budget, not a business.
+The oldest filter in venture: is someone's hair on fire? A person whose hair
+is burning grabs any bucket — muddy water, a jacket — because waiting costs
+more than the bucket's imperfection. A startup passing this test sells an
+imperfect v1 today; one failing it must first convince people the fire
+exists, and that is a marketing budget, not a business.
 
-The second half of the test: even with a burning problem, the solution must
-be roughly **10x better** on the dimension the buyer ranks first — because
-switching costs, integration risk, and status-quo bias eat anything smaller.
-2x better is a feature for the incumbent to copy.
+The second half: even with a burning problem, the solution must be roughly
+**10x better** on the dimension the buyer ranks first, because switching
+costs, integration risk, and status-quo bias eat anything smaller. 2x is a
+feature for the incumbent to copy.
 
 ## Step 1: Ingest
 
@@ -54,8 +53,8 @@ one rule: **would a different answer change a grade?**
 Worth checking, because the answer is public:
 
 - **Named deadlines and regulations** — does the rule exist, is the date
-  right, has it slipped? Deadline pressure is the second-heaviest input to
-  problem heat and the easiest claim to get wrong.
+  right, has it slipped? The heaviest claim in problem heat, and the
+  easiest to get wrong.
 - **Named customers, partners, and logos** — is the relationship public, and
   is it a purchase or a pilot?
 - **Third-party coverage** — reporting, filings, funding, litigation.
@@ -68,9 +67,8 @@ questions, never in Evidence as guesses.
 
 Tag whatever you confirm `(verified)` and name the source. If you cannot
 check — no network, nothing published — say so once and leave the item at
-the tier it earned on its own. Failing to verify never promotes a claim. An
-unverified read is still a useful read; a read that pretends to be verified
-is not.
+the tier it earned; failing to verify never promotes a claim. An unverified
+read is still useful; one that pretends to be verified is not.
 
 **A failed check is the most valuable thing this step produces.** A deadline
 two years later than the deck claims, a "customer" who turns out to be a
@@ -126,6 +124,30 @@ Grade: **PROVEN** (measured delta, third-party or customer-verified),
 measured), **UNPROVEN** (asserted only), **ABSENT** (delta is incremental
 even if claims are loud).
 
+### Reading the two grades together
+
+The grades interact, and four corners carry most of the diagnostic weight —
+a reading aid, not a lookup table.
+
+- **Hot fire, no bucket** (SCORCHING/HOT + ABSENT/UNPROVEN). The problem is
+  real and this is not the answer to it. Usually PASS on the company and
+  WATCH the space — say both, because the space is the finding.
+- **Solution in search of a problem** (COLD/WARM + PROVEN). A measured,
+  genuine advantage that nobody's week depends on. The tell is a long sales
+  cycle behind an impressive demo. Ask what would have to change for anyone
+  to switch on a deadline.
+- **The fundable middle** (HOT + PLAUSIBLE). Where most good early companies
+  sit. What remains is team and execution, which this check does not grade —
+  say so rather than manufacturing a tiebreak.
+- **Suspiciously perfect** (SCORCHING + PROVEN). Sometimes real, but the
+  top-right corner is also what a well-built deck is engineered to produce.
+  Before believing it, check that both grades rest on `(verified)` lines
+  rather than `(claim)` lines.
+
+The axes move independently, and on a re-test especially: heat can fall while
+the delta rises. A read where both always move together is usually a read
+that only looked at how the company is doing.
+
 ## Step 5: Evidence discipline
 
 Every line in the Evidence section must trace to the input or to something
@@ -144,9 +166,8 @@ Tag every Evidence line by how much weight it can bear:
   word, but the kind of thing you could hold them to.
 - `(verified)` — you checked it in Step 2. Name the source.
 
-The line between the first two is falsifiability. "Utilities are drowning in
-compliance work" cannot be proven false, so it is a claim. "Trenton Water
-Works is a paying customer" can be, so it is input.
+The line between the first two is falsifiability: a sentence you could not
+prove wrong is a claim, however specific it sounds.
 
 ```
 - Trenton Water Works is a paying customer (verified — utility board
@@ -161,9 +182,9 @@ input is claims only` and let Gaps carry the check. An empty Evidence
 section is a finding, not a failure to analyze.
 
 Marketing-heavy inputs are a trap this skill exists to resist: a deck can be
-fluent in urgency and contain nothing but claims. Fluency is not heat. When the input is all adjectives, say
-so — the honest verdict is UNPROVEN with a sharp Gaps list, not a low score
-invented to look rigorous.
+fluent in urgency and contain nothing but claims. Fluency is not heat. The
+honest response is UNPROVEN with a sharp Gaps list, not a low score invented
+to look rigorous.
 
 ## Step 6: Verdict
 
@@ -189,8 +210,8 @@ fact that would change it]
 
 Close with the action. `Next:` takes one of four:
 
-- **PASS** — not worth a meeting. Give the one clause that says why, so the
-  reader can send it back to whoever forwarded it.
+- **PASS** — not worth a meeting; give the one clause that says why, so it
+  can go back to whoever forwarded it.
 - **WATCH** — not now; name the fact that would change that.
 - **MEET** — the remaining uncertainty is the kind only a founder resolves.
 - **DILIGENCE** — worth real time and money. Rare, and it should read as
@@ -199,9 +220,7 @@ Close with the action. `Next:` takes one of four:
 The recommendation is not a lookup from the grades — if it were, the grades
 would be enough. It is the grades plus **the cost of the next step**. A
 WARM/UNPROVEN read still earns MEET when one call would settle it; a
-HOT/PLAUSIBLE read earns WATCH when only a year of operating data would. The
-two can point opposite ways on purpose: SCORCHING/ABSENT is usually PASS on
-this company and WATCH on the space — say both.
+HOT/PLAUSIBLE read earns WATCH when only a year of operating data would.
 
 A re-test changes this template and uses a different `Next:` ladder — see
 the final section.
@@ -240,8 +259,8 @@ Evidence:
 Gaps:
 - Are the two pilots paying customers now, and at what price?
 - Who verified the 87% — the 3PLs' incident logs or Acme's own sensors?
-- Do any insurers discount premiums for collision-avoidance retrofits?
-  That would create a de facto deadline at policy renewal.
+- Do insurers discount premiums for these retrofits? That would create a
+  de facto deadline at renewal.
 
 Verdict: A safety manager already writing $480k checks will trial an
 imperfect retrofit — the spend proves the fire. The delta is large but
@@ -311,7 +330,3 @@ Verdict: ...
 Next: HOLD
 Tripwire: a second slip, or any of the three utilities declining to renew.
 ```
-
-Note what that example does: heat fell and the delta rose. The two axes move
-independently, and a re-test that moves them in lockstep is usually a re-test
-that only looked at how the company is doing.
