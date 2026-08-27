@@ -18,7 +18,7 @@ integration risk, and status-quo bias eat anything smaller.
 ## Install
 
 ```bash
-git clone https://github.com/<you>/hair-on-fire-skill.git ~/.claude/skills/hair-on-fire
+git clone https://github.com/Ariboa12/hair-on-fire-skill.git ~/.claude/skills/hair-on-fire
 ```
 
 Or copy `SKILL.md` into `~/.claude/skills/hair-on-fire/`.
