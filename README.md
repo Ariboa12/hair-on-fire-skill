@@ -32,4 +32,5 @@ deck and ask for a read — e.g. "hair on fire check on this one: …", "run the
 ## Files
 
 - `SKILL.md` — the skill itself
-- `evals/evals.json` — eval cases for `skill-creator`
+- `evals/evals.json` — 8 eval cases for `skill-creator`
+- `evals/files/` — input fixtures referenced by the evals
