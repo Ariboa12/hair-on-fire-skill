@@ -74,11 +74,13 @@
     {
       "id": 5,
       "prompt": "should I take this meeting? Thornbury sells shift-scheduling software to hospital nurse managers. Nurse managers currently build unit schedules by hand in Excel — 6 to 9 hours per unit per month — and 40% of units report at least one uncovered shift a week. Thornbury cuts scheduling to under an hour and eliminated uncovered shifts at both pilot units. The nurse managers love it. Purchasing at both pilot hospitals sits with the VP of Clinical Operations, who hasn't been introduced yet. $18k/yr per hospital.",
-      "expected_output": "The buyer-is-not-the-user trap. The person whose hair is genuinely burning (the nurse manager: 6-9 hours a month, weekly uncovered shifts) is not the person who signs (the VP of Clinical Operations, whose pain is entirely unestablished). A strong check separates the two and either discounts the heat grade or makes the unestablished budget-holder the first gap. A weak check grades HOT on the nurse manager's pain and never notices nobody has talked to the buyer.",
+      "expected_output": "The buyer-is-not-the-user trap. The person whose hair is genuinely burning (the nurse manager: 6-9 hours a month, weekly uncovered shifts) cannot buy $18k/yr software on their own signature. Per the rule, their pain is a lead and the heat belongs to the VP of Clinical Operations, whose pain is entirely unestablished — so the heat grade must be discounted and the unestablished budget-holder becomes the first Gap. A weak check grades HOT on the nurse manager's enthusiasm and never notices nobody has spoken to the buyer.",
       "files": [],
       "assertions": [
         "Explicitly distinguished the person who feels the pain (the nurse manager) from the person who controls the budget (the VP of Clinical Operations)",
-        "Treated the unestablished budget-holder as a material limit on the problem-heat grade, or made it the first Gap — rather than grading heat on the nurse manager's pain alone",
+        "Applied the can-they-sign test: recognised that $18k/yr with purchasing at the VP level is not something the nurse manager can buy on their own, so nurse-manager pain is a lead rather than the heat",
+        "Did not grade problem heat above WARM — nurse-manager enthusiasm alone did not produce HOT or SCORCHING while the budget-holder's pain is unestablished",
+        "Made the unestablished budget-holder the first Gap, or otherwise treated it as the single biggest hole in the read",
         "Used the exact verdict template: 🔥 header, Problem heat and 10x delta grade lines, Evidence section, Gaps section, Verdict paragraph, and a Next: line",
         "Graded the 10x delta PLAUSIBLE or PROVEN on the 6-9 hours to under an hour reduction and the eliminated uncovered shifts at two pilots",
         "Ends with a Next: line, and if it reads MEET the stated reason turns on resolving whether the VP of Clinical Operations feels the problem"
