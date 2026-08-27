@@ -34,11 +34,46 @@ page by page. If the input is thin (a one-liner), run the evaluation anyway
 — a thin input means the Gaps section does more of the work, not that you
 should ask for more before starting. State what you evaluated.
 
-Keep claims and facts separate from the start: the company's own copy is a
-*claim*; customer counts with names, third-party coverage, signed contracts,
-regulatory filings, and prices actually paid are *evidence*.
+Keep claims and facts separate from the start. The company's own copy —
+adjectives, market sizes, "10x" — is a *claim*. Specific falsifiable
+particulars — named customers, signed contracts, regulatory filings, prices
+actually paid — carry weight even before you check them. Step 5 tags each
+tier; noticing the difference starts here.
 
-## Step 2: The problem-heat test
+## Step 2: Verify what is cheap to verify
+
+Before grading, check the handful of external facts the grades will hang on.
+This is two or three searches, not a research project, and they are chosen by
+one rule: **would a different answer change a grade?**
+
+Worth checking, because the answer is public:
+
+- **Named deadlines and regulations** — does the rule exist, is the date
+  right, has it slipped? Deadline pressure is the second-heaviest input to
+  problem heat and the easiest claim to get wrong.
+- **Named customers, partners, and logos** — is the relationship public, and
+  is it a purchase or a pilot?
+- **Third-party coverage** — reporting, filings, funding, litigation.
+- **What the status quo actually costs** — incumbent pricing sets the
+  denominator of the 10x test.
+
+Not worth attempting, because the answer is private: backtest internals,
+contract values, churn, margins, retention. Those belong in Gaps as
+questions, never in Evidence as guesses.
+
+Tag whatever you confirm `(verified)` and name the source. If you cannot
+check — no network, nothing published — say so once and leave the item at
+the tier it earned on its own. Failing to verify never promotes a claim. An
+unverified read is still a useful read; a read that pretends to be verified
+is not.
+
+**A failed check is the most valuable thing this step produces.** A deadline
+two years later than the deck claims, a "customer" who turns out to be a
+design partner, a $40B market that is $4B on inspection — put the correction
+in Evidence and let it move the grade. Confirming a claim raises confidence;
+breaking one changes the answer.
+
+## Step 3: The problem-heat test
 
 Score how badly the buyer's hair is burning. Look for evidence, in
 descending order of weight:
@@ -64,7 +99,7 @@ wearing a problem costume).
 The classic failure this catches: the **vitamin dressed as a painkiller** —
 real users, pleasant product, and no one's week gets worse if it vanishes.
 
-## Step 3: The 10x test
+## Step 4: The 10x test
 
 Name the status quo first — the incumbent product, the manual process, or
 "do nothing." The delta is measured against that, not against zero. Then:
@@ -86,22 +121,46 @@ Grade: **PROVEN** (measured delta, third-party or customer-verified),
 measured), **UNPROVEN** (asserted only), **ABSENT** (delta is incremental
 even if claims are loud).
 
-## Step 4: Evidence discipline
+## Step 5: Evidence discipline
 
 Every line in the Evidence section must trace to the input or to something
-you verified — cite which. Never promote a claim to evidence because it is
-specific-sounding, and never fill a gap with optimism: a gap stated plainly
+you verified. Never promote a claim because it is specific-sounding, and
+never fill a gap with optimism: a gap stated plainly
 is worth more to an investor than a guess dressed as analysis. Phrase each
 gap as the question you would put to the founder, because that is what the
 reader will do with it.
 
+Tag every Evidence line by how much weight it can bear:
+
+- `(claim)` — the company asserts it and nothing corroborates it. Most deck
+  copy lands here: "mission-critical", "10x", "teams are drowning."
+- `(input)` — a specific, falsifiable particular the company supplied: a
+  named customer, a dated deadline, a price, a measured figure. Still their
+  word, but the kind of thing you could hold them to.
+- `(verified)` — you checked it in Step 2. Name the source.
+
+The line between the first two is falsifiability. "Utilities are drowning in
+compliance work" cannot be proven false, so it is a claim. "Trenton Water
+Works is a paying customer" can be, so it is input.
+
+```
+- Trenton Water Works is a paying customer (verified — utility board
+  minutes, Mar 2026)
+- $40k/yr list price vs the ~$700k/yr Trenton spent reactively (input)
+- Utilities are drowning in compliance work (claim)
+```
+
+**A `(claim)` line can explain a grade or lower it. It can never raise one.**
+If nothing in the input clears the claim bar, write `Evidence: none — the
+input is claims only` and let Gaps carry the check. An empty Evidence
+section is a finding, not a failure to analyze.
+
 Marketing-heavy inputs are a trap this skill exists to resist: a deck can be
-fluent in urgency ("mission-critical", "10x", "$40B market") and contain
-zero evidence. Fluency is not heat. When the input is all adjectives, say
+fluent in urgency and contain nothing but claims. Fluency is not heat. When the input is all adjectives, say
 so — the honest verdict is UNPROVEN with a sharp Gaps list, not a low score
 invented to look rigorous.
 
-## Step 5: Verdict
+## Step 6: Verdict
 
 ALWAYS use this exact template:
 
@@ -112,7 +171,7 @@ Problem heat: [SCORCHING|HOT|WARM|COLD] — one line on who is burning and why
 10x delta:    [PROVEN|PLAUSIBLE|UNPROVEN|ABSENT] — one line on the dimension and the measurement
 
 Evidence:
-- [strongest items first, each tagged (input) or (verified), with source]
+- [strongest first, each tagged (verified), (input), or (claim), with source]
 
 Gaps:
 - [each phrased as the question to ask the founder]
@@ -141,7 +200,7 @@ Install is one shift per forklift; no new certification required."
 🔥 Hair-on-Fire Check: Acme
 
 Problem heat: HOT — safety managers already pay $480k/yr per site in fines
-and claims (existing spend), but no forcing deadline is named.
+and claims (existing spend), but no forcing deadline exists (verified).
 10x delta:    PLAUSIBLE — 87% incident reduction at two pilot sites (input,
 company-reported); slot-in install avoids switching-cost drag; not yet
 third-party verified.
@@ -150,15 +209,18 @@ Evidence:
 - $480k/yr per-site claims + fines cost (input — company-reported figure)
 - 87% near-miss reduction across two named-type pilots in 90 days (input)
 - One-shift install, no recertification — low switching cost (input)
+- No mandate creates a deadline: OSHA 1910.178 requires operator training,
+  not collision-avoidance hardware (verified — OSHA standard text)
 
 Gaps:
 - Are the two pilots paying customers now, and at what price?
 - Who verified the 87% — the 3PLs' incident logs or Acme's own sensors?
-- Does any regulation or insurer discount create a deadline?
+- Do any insurers discount premiums for collision-avoidance retrofits?
+  That would create a de facto deadline at policy renewal.
 
 Verdict: A safety manager already writing $480k checks will trial an
 imperfect retrofit — the spend proves the fire. The delta is large but
 self-reported; insurer-verified incident data or a signed conversion of
-either pilot would move this to HOT/PROVEN and make it fundable on evidence
+either pilot would move the delta to PROVEN and make it fundable on evidence
 rather than story.
 ```
